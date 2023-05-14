@@ -1,0 +1,20 @@
+<h2>Formulario</h2>
+
+<form [formGroup]="elementForm" (ngSubmit)="onSubmit()">
+
+<mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput  formControlName="name">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Weight</mat-label>
+    <input matInput  formControlName="weight">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Symbol</mat-label>
+    <input matInput  formControlName="symbol">
+  </mat-form-field>
+  <button mat-button >Enviar</button>
+  <button mat-button [mat-dialog-close]="'ok'" cdkFocusInitial>Ok</button>
+</form>
+<button mat-button (click)="onNoClick()">Cerrar</button>

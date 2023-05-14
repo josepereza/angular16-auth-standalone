@@ -1,0 +1,10 @@
+table {
+    width: 100%;
+  }
+  form {
+    padding: 20px;
+    width: 90%;
+  }
+  mat-form-field {
+    width: 100%;
+  }
