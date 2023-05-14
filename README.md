@@ -3,6 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
 ## Backend
 * https://github.com/josepereza/nestjs9-auth-jwt-simple-without-passport
+* https://github.com/josepereza/nestjs9-auth-jwt-simple-without-passport-2
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
