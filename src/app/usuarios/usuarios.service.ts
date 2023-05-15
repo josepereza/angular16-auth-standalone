@@ -10,6 +10,10 @@ export class UsuariosService {
     ) { }
 
   getUsuarios(){
-    return this.http.get('https://reqres.in/api/users?page=2')
+    return this.http.get(this.Apiurl)
+  }
+
+  getPerfil(){
+    return this.http.get(`${this.Apiurl}/profile`)
   }
 }

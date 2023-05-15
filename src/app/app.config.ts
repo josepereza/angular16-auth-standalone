@@ -12,7 +12,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withInterceptors([authInterceptor])),
     provideRouter(routes),
     provideAnimations(),
-    {provide: 'APIREQRES', useValue:'https://reqres.in/api/users'},
+    {provide: 'APIREQRES', useValue:'http://localhost:3000/auth'},
     provideClientHydration() 
 ]
 };
