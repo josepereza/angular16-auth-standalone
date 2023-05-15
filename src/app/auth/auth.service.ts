@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  constructor(private router:Router, private http:HttpClient) { }
+  constructor(private router:Router, private http:HttpClient, @Inject('APIREQRES') public Apiurl:string) { }
 
   // Sign-in
   signIn(user: any) {
@@ -35,5 +35,9 @@ export class AuthService {
     if (removeToken == null) {
       this.router.navigate(['log-in']);
     }
+  }
+
+  get apiUrl(){
+    return this.Apiurl
   }
 }

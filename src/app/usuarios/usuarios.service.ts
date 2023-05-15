@@ -16,4 +16,6 @@ export class UsuariosService {
   getPerfil(){
     return this.http.get(`${this.Apiurl}/profile`)
   }
+
+  
 }
