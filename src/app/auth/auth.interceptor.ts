@@ -9,7 +9,9 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
   
   console.log('request', req.method, req.url);
  
-     // ejemplo de api  
+     // ejemplo de api 
+     // if (req.url.startsWith('http://localhost:3000/auth')) {
+      
   if (req.url.startsWith(inject(AuthService).Apiurl)) {
     const authService=inject(AuthService)
     const authToken = authService.getToken();
